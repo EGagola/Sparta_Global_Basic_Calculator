@@ -1,5 +1,5 @@
 // alert("Hello");
-var basicOrAdvanced = prompt("Would you like to use the basic functions or the advanced functions? (basic, advanced)");
+var basicOrAdvanced = prompt("Would you like to use the basic functions or the advanced functions? (basic, advanced)").toLowerCase();
 if(basicOrAdvanced == "basic"){
   var basicFunction = prompt("What function would you like to use? (+,-,*,/)");
   if (basicFunction == "+") {
@@ -22,12 +22,12 @@ if(basicOrAdvanced == "basic"){
     console.log("You have entered an invalid selection, please refresh the page.");
   }
 }else if (basicOrAdvanced == "advanced") {
-  var advSelection = prompt("Which advanced function would you like to use? (square-root) or (square)")
+  var advSelection = prompt("Which advanced function would you like to use? (square-root) or (square)").toLowerCase();
     if (advSelection == "square-root") {
-      var advSqrt = prompt("Please enter the number you wish to find the square root of.")
+      var advSqrt = prompt("Please enter the number you wish to find the square root of.");
       console.log(Math.sqrt(advSqrt));
     }else if (advSelection == "square") {
-      var advSqr = prompt("Please enter the number you wish to square.")
+      var advSqr = prompt("Please enter the number you wish to square.");
       console.log(Math.pow(advSqr,2));
     }else {
       console.log("You have entered an invalid selection, please refresh the page.");
